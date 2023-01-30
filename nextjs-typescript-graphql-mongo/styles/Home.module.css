@@ -27,10 +27,12 @@
 
 .description p {
   position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  top: 28px;
+  left: 4px;
+  width: 900px;
+  padding: 10rem;
+  background-color: rgba(var(--callout-rgb), 0.8);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.9);
   border-radius: var(--border-radius);
 }
 
@@ -204,7 +206,7 @@
   }
 
   .description {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .description a {
