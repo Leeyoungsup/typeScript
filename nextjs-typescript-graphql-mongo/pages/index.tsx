@@ -2,13 +2,24 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
+import { type } from 'os';
+type Config = {
+  path: string;
+  state: object;
+};
 
-const numbers: readonly number[] = [1, 2, 3, 4];
-const player: [string, number, boolean] = ['nico', 1, true];
+type Push = {
+  (path: string): void;
+  (config: Config): void;
+};
 
-const a: number[] = [1, 2, 3, 4];
-const b: any = true;
-a + b;
+const push: Push = (config) => {
+  if (typeof config === 'string') console.log(config);
+  else {
+    console.log(config.path, config.state);
+  }
+};
+
 export default function Home() {
   return (
     <>
@@ -17,7 +28,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>{a + b}</p>
+          <p>sdas</p>
         </div>
       </main>
     </>
