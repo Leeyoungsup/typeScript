@@ -3,22 +3,15 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 import { type } from 'os';
-type Config = {
-  path: string;
-  state: object;
+
+type SuperPrint = {
+  <TypePlaceholder>(arr: TypePlaceholder[]): TypePlaceholder;
 };
 
-type Push = {
-  (path: string): void;
-  (config: Config): void;
-};
-
-const push: Push = (config) => {
-  if (typeof config === 'string') console.log(config);
-  else {
-    console.log(config.path, config.state);
-  }
-};
+const superPrint: SuperPrint = (arr) => arr[0];
+superPrint([1, 2, 3, 4]);
+superPrint([true, false, true]);
+superPrint(['asd', 1, 2, true]);
 
 export default function Home() {
   return (
@@ -28,7 +21,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>sdas</p>
+          <p>{superPrint(['asd', 1, 2, true])}</p>
         </div>
       </main>
     </>
