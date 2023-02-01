@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.tsx"],"names":[],"mappings":";;;;;;;;;AAAA","sourcesContent":["export default function Home() {\r\n  return hi;\r\n}\r\n"],"file":"index.dev.js"}
