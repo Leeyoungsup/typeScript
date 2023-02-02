@@ -1,25 +1,21 @@
 import { specifiedSDLRules } from 'graphql/validation/specifiedRules';
 import Head from 'next/head';
 import { NewLineKind } from 'typescript';
-import EditorJs from 'react';
+import EditorJs, { useState } from 'react';
+import NavBar from '@/components/NavBar';
 
-interface linkAddress {
-  link: string;
-}
-function onClickAboutOpen(event: React.MouseEvent<HTMLElement>) {}
 export default function Home() {
+  const [counter, setCounter] = useState(0);
+
   return (
     <>
       <Head>
-        <title>hiwqe</title>
+        <title>Home</title>
       </Head>
-      <main>
-        <a href="about">about open</a>
-        <div>about open</div>
-
-        <div>hihihi</div>
-        <div>hihihi</div>
-      </main>
+      <div>
+        <NavBar></NavBar>
+        <h1>Hello</h1>
+      </div>
     </>
   );
 }

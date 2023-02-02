@@ -1,13 +1,15 @@
+import NavBar from '@/components/NavBar';
 import Head from 'next/head';
 
 export default function Potato() {
   return (
     <>
       <Head>
-        <title>paga</title>
+        <title>about</title>
       </Head>
+      <NavBar></NavBar>
       <main>
-        <div>sdlweiois</div>
+        <h1>about</h1>
       </main>
     </>
   );
