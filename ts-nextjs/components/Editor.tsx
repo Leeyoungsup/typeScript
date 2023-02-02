@@ -1,6 +1,6 @@
-import React, { memo, useEffect, useRef } from "react";
-import EditorJS, { OutputData } from "@editorjs/editorjs";
-import { EDITOR_TOOLS } from "./EditorTools";
+import React, { memo, useEffect, useRef } from 'react';
+import EditorJS, { OutputData } from '@editorjs/editorjs';
+import { EDITOR_TOOLS } from './EditorTools';
 //props
 type Props = {
   data?: OutputData;
@@ -32,6 +32,6 @@ const EditorBlock = ({ data, onChange, holder }: Props) => {
       }
     };
   }, []);
-  return <div id={holder} className="prose max-w-full" />;;
+  return <div id={holder} className="prose max-w-full" />;
 };
 export default memo(EditorBlock);

@@ -1,17 +1,14 @@
-import { useSubscription} from '@apollo/client';
+import { useSubscription } from '@apollo/client';
 import React, { useEffect } from 'react';
 import { RESULTS_SUBSCRIPTION } from '../graphql/subscriptions/ResultsSubscriptions';
 
-
-
 type TerminalComponentTypes = {
-  results : {
-    result : string
-  }
-}
+  results: {
+    result: string;
+  };
+};
 
 export default function TerminalComponent() {
-
   /* const { data, loading } = useSubscription<TerminalComponentTypes, boolean>(RESULTS_SUBSCRIPTION);
   if (loading) return <p>Loading...</p>;
   if (data) { 
@@ -28,7 +25,5 @@ export default function TerminalComponent() {
       
       )
     } */
-  return(
-    <h1> Terminal</h1>
-  ) 
+  return <h1> Terminal</h1>;
 }
