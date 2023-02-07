@@ -13,8 +13,8 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <div>
-        <NavBar></NavBar>
-        <h1>Hello</h1>
+        <NavBar />
+        <h1 className="active">Hello</h1>
       </div>
     </>
   );
