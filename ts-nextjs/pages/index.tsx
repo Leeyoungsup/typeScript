@@ -15,6 +15,11 @@ export default function Home() {
       <div>
         <NavBar />
         <h1 className="active">Hello</h1>
+        <style jsx global>{`
+          a {
+            color: white;
+          }
+        `}</style>
       </div>
     </>
   );

@@ -7,9 +7,14 @@ export default function Potato() {
       <Head>
         <title>about</title>
       </Head>
-      <NavBar></NavBar>
+      <NavBar />
       <main>
         <h1>about</h1>
+        <style jsx global>{`
+          a {
+            color: white;
+          }
+        `}</style>
       </main>
     </>
   );
