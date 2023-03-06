@@ -7,12 +7,16 @@ export default function NavBar() {
   return (
     <nav>
       <Link href="/" legacyBehavior>
-        <a className={router.pathname === '/' ? 'active titleColor' : ''}>
+        <a className={router.pathname === '/' ? 'choiceTitle' : 'basicTitle'}>
           Home
         </a>
       </Link>
       <Link href="/about" legacyBehavior>
-        <a className={router.pathname === '/about' ? 'active titleColor' : ''}>
+        <a
+          className={
+            router.pathname === '/about' ? 'choiceTitle' : 'basicTitle'
+          }
+        >
           About
         </a>
       </Link>
@@ -20,10 +24,12 @@ export default function NavBar() {
         a {
           text-decoration-line: none;
         }
-        .active {
+        .choiceTitle {
           color: yellow;
+          background-color: red;
         }
-        .titleColor {
+        .basicTitle {
+          color: yellow;
           background-color: blue;
         }
       `}</style>

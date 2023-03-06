@@ -13,7 +13,6 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <div>
-        <NavBar />
         <h1 className="active">Hello</h1>
         <style jsx global>{`
           a {
